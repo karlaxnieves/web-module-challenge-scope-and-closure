@@ -28,11 +28,14 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+  Counter1 is using closures as where counter2 is using global functions.
   
   2. Which of the two uses a closure? How can you tell?
-  
+  Counter1 uses closure. I can tell because it is putting functions together as well as acessing the function from a parent level scope.
+
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+  Counter1 would be preferable if you are trying to pass multiple counters at once. Counter2 would be preferable never because you always want your code to be reusable.
 */
 
 // counter1 code
